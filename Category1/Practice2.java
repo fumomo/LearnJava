@@ -10,17 +10,14 @@
  */
 public class Practice2 {
 
-	/**
-	 * @param args
-	 */
 	public static void main(String[] args) {
-		
+
 		int x;
-		
+
 		x = 11;
-		
+
 		System.out.println(x);
-	
+
 
 	}
 
