@@ -7,7 +7,6 @@ import java.io.InputStreamReader;
  * 練習問題 4 - 15
  * 入力された数が素数かどうかを判定するプログラムを作成しなさい。
  * ※ 	判定する数は 4 以上としてよい。
-
  */
 public class Practice315 {
 
