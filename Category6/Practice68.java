@@ -9,7 +9,7 @@
  * このメソッドを使用して、11 番目から 20 番目までの項を
  * するプログラムを作成しなさい。
  */
-public class Prime68 {
+public class Practice68 {
 
 	public static void main(String[] args) {
 
