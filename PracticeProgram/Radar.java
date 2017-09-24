@@ -4,7 +4,7 @@ import java.util.Random;
 
 /**
  * @author Fumomo
- *
+ * レーダーゲーム
  */
 public class Radar {
 
@@ -13,7 +13,7 @@ public class Radar {
 		int position = 0;					// 入力値
 		int range = 0;						// 範囲
 		int counter;						// 回数カウント用
-		int ContinueSelect = 0;			// ゲームを続けるかどうかの選択結果
+		int continueSelect = 0;			// ゲームを続けるかどうかの選択結果
 
 
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -48,24 +48,24 @@ public class Radar {
 					System.out.print("\n範囲は？");
 					range = Integer.parseInt(br.readLine());
 
-					if(target == position) {
+					if(target == position){
 						System.out.println("\nあたりです！ " + counter + "回目で正解しました！");
 						break;
 
-					}else if(Math.abs(target - position) < range) {
+					}else if(Math.abs(target - position) < range){
 						System.out.println("\nヒットしました！");
 
-					}else {
+					}else{
 						System.out.println("\nはずれました！");
 					}
 
 				}while(true);
 
 				System.out.println("もう一度やりますか？（1=Yes; 0=No)");
-				ContinueSelect = Integer.parseInt(br.readLine());
+				continueSelect = Integer.parseInt(br.readLine());
 
 				// 1以外の値であればやめる
-				if(ContinueSelect != 1) {
+				if(continueSelect != 1) {
 					break;
 				}
 
